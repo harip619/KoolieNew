@@ -18,7 +18,8 @@ function InputItem({type}) {
     },[]);
 
     const getLatAndLang=(place,type)=>{
-        const placeId=place.value.place_id;
+        console.log(place, type);
+        const placeId=place?.value.place_id;
         const service=new google.maps.places.PlacesService(document.createElement('div'))
         service.getDetails({placeId},(place,status)=>{
             if(status==='OK' && place.geometry && place.geometry.location){
@@ -47,7 +48,7 @@ function InputItem({type}) {
       <Image src={type=='source'?'/iconbullet.png':'/iconcirclebullet.png'} width={15} height={15} />
       {/*<input type="text" placeholder={type=='source'?'Pickup Location':'Drop Off Location' }className='bg-transparent w-full outline-none'/>*/}
       <GooglePlacesAutocomplete 
-      apiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY}
+      
       selectProps={{
         value,
         onChange: (place)=>{getLatAndLang(place,type);setValue(place)},
