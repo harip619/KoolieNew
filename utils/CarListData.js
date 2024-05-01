@@ -4,7 +4,7 @@ export const CarListData=[
         name:'Two-wheeler',
         seat:2,
         desc:'Affordable',
-        amount:1.1,
+        amount:2.1,
         image: '/bike.png'
     },
     {
@@ -12,7 +12,7 @@ export const CarListData=[
         name:'Mini-Van',
         seat:4,
         desc:'Affordable with extra space',
-        amount:2.1,
+        amount:3.5,
         image: '/minivan.png'
     },
     {
@@ -20,7 +20,7 @@ export const CarListData=[
         name:'Truck',
         seat:10,
         desc:'Unlimited Space',
-        amount:3.5,
+        amount:4.2,
         image: '/truck.png'
     },
 ]
