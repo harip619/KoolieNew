@@ -37,7 +37,7 @@ function SearchSection() {
       <InputItem type='source'/>
       <InputItem type='destination'/>
 
-      <button className='p-3 bg-black w-full mt-5 text-white' onClick={()=>calculateDistance()}>Search</button>
+      <button className='p-3 bg-black w-full mt-5 text-white' onClick={()=>calculateDistance()}>Calculate</button>
     </div>
     {console.log("testttee",distance)}
     {distance?<CarListOptions distance={distance*13}></CarListOptions>:null}

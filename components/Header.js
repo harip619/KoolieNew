@@ -1,13 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import { UserButton } from '@clerk/nextjs'
+import { IoPersonCircleSharp } from "react-icons/io5";
 
 function Header() {
     const headerMenu=[
         {
             id:1,
             name:'Profile',
-            icon:'/download (1).jpg'
+            icon:'/profile.png'
         },
         {
             id:2,
@@ -17,7 +18,7 @@ function Header() {
     ]
 
     return (
-        <div className='p-5 pb-4 pl-10 border-b-[4px] border-gray-200 flex items-center justify-between'>
+        <div className='p-5 pb-4 pl-10 border-b-[4px] border-gray-200 flex items-center justify-between bg-red-600'>
             <div className='flex gap-24 items-center '>
                 <Image src='/logo.png' height={70} width={70} alt='picture not' />
                 <div className='flex gap-6 items-center'>
