@@ -16,7 +16,7 @@ function CarListItem({car,distance}) {
                 </h2>
                 <p>{car.desc}</p>
             </div>
-            <h2 className='tex-[18px] font-semibold'>₹{(car.amount*distance).toFixed(2)}</h2>
+            <h2 className='tex-[18px] font-semibold'>₹{Math.round(car.amount*distance)}</h2>
             </div>
         </div>
       </div>
