@@ -30,7 +30,7 @@ const CheckoutForm = ({amount}) => {
         confirmParams:{
           return_url:"localhost:3000/"
         }
-      }).then(alert("Payment Succes"))
+      }).then(alert("Payment Success"))
   }
   return (
     

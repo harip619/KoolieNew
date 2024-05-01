@@ -19,7 +19,7 @@ function CarListOptions({distance}) {
       ))}
       {selectedCar?.name?
       <div className='flex justify-between fixed bottom-5 bg-white p-3 shadow-xl w-full md:w-[30%] border-[1px] items-center rounded-lg'>
-        <h2>Make paymnet for</h2>
+        <h2>Make Payment For</h2>
         <button className='p-3 bg-black text-white rounded-md text-center' onClick={()=>router.push('/payment?amount='+Math.round(selectedCar.amount*distance))}>Request {selectedCar.name}</button>
       </div>:null}
     </div>
