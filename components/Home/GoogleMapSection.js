@@ -7,7 +7,8 @@ import { DestinationContext } from '../../context/DestinationContext';
 function GoogleMapSection() {
   const containerStyle = {
     width: '100%',
-    height: '250%'
+    height: '100%',
+    minHeight:'575px'
   };
 
 
